@@ -3,70 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Warm Wishes for Nur Jannat Ma’am</title>
+  <title>Merry Christmas & Happy New Year!</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
 
     body {
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      background: url('https://images.unsplash.com/photo-1608498584030-d0c052f0f91a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2hyaXN0bWFzfHx8fHx8MTY5OTkyMjY3OQ&ixlib=rb-4.0.3&q=80&w=1080') center/cover no-repeat;
       color: #ffffff;
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: -1;
     }
 
     .container {
-      max-width: 1000px;
-      width: 90%;
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(10px);
+      position: relative;
+      max-width: 800px;
+      background: rgba(255,255,255,0.1);
       border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    }
-
-    .hero {
-      height: 420px;
-      background: url('https://images.unsplash.com/photo-1519682337058-a94d519337bc') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
-    }
-
-    .hero h1 {
-      position: relative;
-      font-size: 2.8rem;
-      font-weight: 600;
-      letter-spacing: 1px;
-      text-align: center;
-    }
-
-    .content {
       padding: 40px;
-      text-align: center;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.5);
     }
 
-    .content h2 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-      font-weight: 500;
-    }
-
-    .content p {
-      font-size: 1.05rem;
-      line-height: 1.8;
-      color: #e0e0e0;
-      margin-bottom: 30px;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #ffdd00;
+      text-shadow: 2px 2px 8px #000;
     }
 
     .btn {
@@ -76,14 +50,15 @@
       border: none;
       border-radius: 50px;
       cursor: pointer;
-      background: linear-gradient(135deg, #00b09b, #96c93d);
+      background: linear-gradient(135deg, #ff512f, #f09819);
       color: #ffffff;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      margin-top: 20px;
     }
 
     .btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     }
 
     .modal {
@@ -99,7 +74,7 @@
     .modal-content {
       background: #ffffff;
       color: #333333;
-      max-width: 650px;
+      max-width: 600px;
       width: 100%;
       padding: 35px;
       border-radius: 15px;
@@ -115,7 +90,7 @@
 
     .modal-content p {
       font-size: 1rem;
-      line-height: 1.8;
+      line-height: 1.7;
       margin-bottom: 25px;
     }
 
@@ -134,39 +109,26 @@
     }
 
     @media (max-width: 600px) {
-      .hero h1 { font-size: 2.1rem; }
-      .content h2 { font-size: 1.6rem; }
+      h1 { font-size: 2.2rem; }
     }
   </style>
 </head>
 <body>
+  <div class="overlay"></div>
   <div class="container">
-    <div class="hero">
-      <h1>Respectful Wishes for Nur Jannat Ma’am</h1>
-    </div>
-
-    <div class="content">
-      <h2>With Gratitude & Respect</h2>
-      <p>
-        Teachers shape not only our knowledge but also our values and confidence.
-        This page is a small gesture to express our heartfelt appreciation for your guidance and support.
-      </p>
-      <button class="btn" onclick="openModal()">Click to Read Our Message</button>
-    </div>
+    <h1>Merry Christmas & Happy New Year!</h1>
+    <button class="btn" onclick="openModal()">Click for Our Message</button>
   </div>
 
   <div class="modal" id="modal">
     <div class="modal-content">
-      <h3>Season’s Greetings & Best Wishes 🎄✨</h3>
+      <h3>Season’s Greetings 🎄✨</h3>
       <p>
-        This year, our class was fortunate to welcome a dedicated and inspiring teacher like you.
-        As our SST teacher and the Aqua House Master, your guidance, discipline, and encouragement
-        have made a meaningful difference in our academic journey.
-        
-        Thank you for your patience, motivation, and the positive values you instill in us every day.
-        We truly appreciate your efforts and feel proud to learn under your guidance.
-        
-        Wishing you a Merry Christmas, a Happy New Year, and continued success in everything you do.
+        Merry Christmas & Happy New Year, Ma’am! 🎉✨<br>
+        We are so happy that you joined us this year.<br>
+        As our SST teacher and Aqua House Master, you’ve made learning fun and exciting.<br>
+        Thank you for being a wonderful guide and making our year special.<br>
+        We hope the coming year brings you lots of happiness, smiles, and joyful moments!
       </p>
       <button class="close-btn" onclick="closeModal()">Close</button>
     </div>
